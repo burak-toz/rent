@@ -1,0 +1,1286 @@
+{
+	"MSGSAVE": {
+		"tr": "Kaydet ",
+		"en": "Save ",
+		"es": "Salvar",
+		"it": "Salva"
+	},
+	"MSGCANCEL": {
+		"tr": "İptal ",
+		"en": "Cancel ",
+		"es": "Cancelar",
+		"it": "Annulla"
+	},
+	"MSGDELETE": {
+		"tr": "Sil ",
+		"en": "Delete ",
+		"es": "Eliminar",
+		"it": "Elimina"
+	},
+	"MSGSAVED": {
+		"tr": "Yeni kayıt eklendi.",
+		"en": "New record has been added.",
+		"es": "Nuevo registro ha sido añadido.",
+		"it": "È stato aggiunto un nuovo record."
+	},
+	"MSGUPDATE": {
+		"tr": "Kayıtlar güncellendi.",
+		"en": "Records have been updated.",
+		"es": "Los registros han sido actualizados.",
+		"it": "I record sono stati aggiornati."
+	},
+	"MSGNOTUPDATE": {
+		"tr": "Kayıtlar güncellenemedi.",
+		"en": "Records could not be updated.",
+		"es": "Los registros no se pudieron actualizar.",
+		"it": "I record non possono essere aggiornati."
+	},
+	"MSGNOTSAVED": {
+		"tr": "Kayıtlar kaydedilmedi.",
+		"en": "Records are not saved.",
+		"es": "Los registros no se guardan.",
+		"it": "I record non vengono salvati."
+	},
+	"MSGNEW": {
+		"tr": "Yeni ",
+		"en": "New ",
+		"es": "Nuevo",
+		"it": "Nuovo"
+	},
+	"MSGDONE": {
+		"tr": "Bitti ",
+		"en": "Done",
+		"es": "Hecho",
+		"it": "Fatto"
+	},
+	"MSGCLOSE": {
+		"tr": "Kapat ",
+		"en": "Close",
+		"es": "Cerca",
+		"it": "Vicino"
+	},
+	"MSGSELECT": {
+		"tr": "Seç ",
+		"en": "Select",
+		"es": "Seleccione",
+		"it": "Selezionare"
+	},
+	"MSGCREATE": {
+		"tr": "Oluştur ",
+		"en": "Create",
+		"es": "Crear",
+		"it": "Creare"
+	},
+	"MSGUPLOAD": {
+		"tr": "Yükle ",
+		"en": "Upload",
+		"es": "Subir",
+		"it": "Caricare"
+	},
+	"MSGSUCCESS": {
+		"tr": "Başarılı ",
+		"en": "Successful",
+		"es": "Exitoso",
+		"it": "Riuscito"
+	},
+	"MSGINFO": {
+		"tr": "Bilgi",
+		"en": "Info",
+		"es": "Información",
+		"it": "Informazioni"
+	},
+	"MSGWARN": {
+		"tr": "Uyarı",
+		"en": "Warning",
+		"es": "Advertencia",
+		"it": "Avvertimento"
+	},
+	"MSGERROR": {
+		"tr": "Hata",
+		"en": "Error",
+		"es": "Error",
+		"it": "Errore"
+	},
+	"MSGAY": {
+		"tr": ["", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim",
+                 "Kasım", "Aralık"],
+		"en": ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+                 "November", "December"],
+		"es": ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+                 "Noviembre", "Diciembre"],
+		"it": ["", "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre",
+                 "Novembre", "Dicembre"]
+	},
+	"MSG000001": {
+		"tr": "Giriş ",
+		"en": "Login ",
+		"es": "Iniciar sesión ",
+		"it": "Accesso"
+	},
+	"MSG000002": {
+		"tr": "Hesabınıza giriş yapın. ",
+		"en": "Sign In to your account ",
+		"es": "Iniciar sesión en su cuenta ",
+		"it": "Accedi al tuo account"
+	},
+	"MSG000003": {
+		"tr": "E-posta",
+		"en": "Email ",
+		"es": "Correo electrónico",
+		"it": "E-mail"
+	},
+	"MSG000004": {
+		"tr": "Parola",
+		"en": "Password ",
+		"es": "Contraseña",
+		"it": "Parola d'ordine"
+	},
+	"MSG000005": {
+		"tr": "Diller ",
+		"en": "Languages",
+		"es": "Idiomas",
+		"it": "Le lingue"
+	},
+	"MSG000006": {
+		"tr": "Parolamı Unuttum ",
+		"en": "Forgot Password",
+		"es": "Se te olvidó tu contraseña",
+		"it": "Ha dimenticato la password"
+	},
+	"MSG000007": {
+		"tr": "Kodu Gönder ",
+		"en": "Send Code ",
+		"es": "Enviar Código ",
+		"it": "Manda Il Codice "
+	},
+	"MSG000008": {
+		"tr": "Müşteri Ekle ",
+		"en": "Add Customer",
+		"es": "Agregar cliente ",
+		"it": "Aggiungi cliente"
+	},
+	"MSG000009": {
+		"tr": "Ünvan ",
+		"en": "Company Name ",
+		"es": "Nombre de Empresa ",
+		"it": "Nome della ditta"
+	},
+	"MSG000010": {
+		"tr": "İşlemler",
+		"en": "Transactions",
+		"es": "Actas ",
+		"it": "Le transazioni"
+	},
+	"MSG000011": {
+		"tr": "Ülke ",
+		"en": "Country ",
+		"es": "País ",
+		"it": "Nazione"
+	},
+	"MSG000012": {
+		"tr": "Ülke Seçiniz ",
+		"en": "Select Country",
+		"es": "Seleccionar país",
+		"it": "Seleccionar país"
+	},
+	"MSG000013": {
+		"tr": "Telefon ",
+		"en": "Telephone ",
+		"es": "Teléfono ",
+		"it": "Telefono"
+	},
+	"MSG000014": {
+		"tr": "Web Adresi ",
+		"en": "Web Address ",
+		"es": "Dirección web ",
+		"it": "Indirizzo Web"
+	},
+	"MSG000015": {
+		"tr": "E-posta adresi kayıtlı değil. ",
+		"en": "The e-mail address is not registered.",
+		"es": "La dirección de correo electrónico no está registrada. ",
+		"it": "L'indirizzo e-mail non è registrato."
+	},
+	"MSG000016": {
+		"tr": "Yeni parolanız e-posta adresinize gönderildi.",
+		"en": "Your new password has been sent to your e-mail address.",
+		"es": "Su nueva contraseña ha sido enviada a su dirección de correo electrónico.",
+		"it": "La tua nuova password è stata inviata al tuo indirizzo e-mail."
+	},
+	"MSG000017": {
+		"tr": "Yeni parola gönderilemedi.",
+		"en": "The new password could not be sent.",
+		"es": "No se pudo enviar la nueva contraseña.",
+		"it": "Non è stato possibile inviare la nuova password."
+	},
+	"MSG000018": {
+		"tr": "E-posta adresiniz veya parolanız hatalı.",
+		"en": "Your e-mail address or password is incorrect.",
+		"es": "Su dirección de correo electrónico o contraseña es incorrecta.",
+		"it": "Il tuo indirizzo e-mail o password non sono corretti."
+	},
+	"MSG000019": {
+		"tr": "Hata",
+		"en": "Error",
+		"es": "Error",
+		"it": "Errore"
+	},
+	"MSG000020": {
+		"tr": "Başarılı",
+		"en": "Successful",
+		"es": "Exitosa",
+		"it": "Riuscita"
+	},
+	"MSG000021": {
+		"tr": "Yeni Parolanız:  ",
+		"en": "New Password:  ",
+		"es": "Nueva contraseña:  ",
+		"it": "Nuova Password:  "
+	},
+	"MSG000022": {
+		"tr": "Müşteri",
+		"en": "Customer",
+		"es": "Cliente",
+		"it": "Cliente"
+	},
+	"MSG000023": {
+		"tr": "MÜŞTERİLER",
+		"en": "CUSTOMERS",
+		"es": "CLIENTES",
+		"it": "I CLIENTI"
+	},
+	"MSG000024": {
+		"tr": "Müşteri Ekle",
+		"en": "Add Customer",
+		"es": "Agregar cliente",
+		"it": "Aggiungi cliente"
+	},
+	"MSG000025": {
+		"tr": "Müşteriler",
+		"en": "Customers",
+		"es": "Clientes",
+		"it": "I clienti"
+	},
+	"MSG000026": {
+		"tr": "Anasayfa",
+		"en": "Dashboard",
+		"es": "Tablero",
+		"it": "Pannello di controllo"
+	},
+	"MSG000027": {
+		"tr": "Arama",
+		"en": "Search",
+		"es": "Buscar",
+		"it": "Ricerca"
+	},
+	"MSG000028": {
+		"tr": "Çıkış",
+		"en": "Logout",
+		"es": "Cerrar sesión",
+		"it": "Disconnettersi"
+	},
+	"MSG000029": {
+		"tr": "FABRİKA",
+		"en": "PLANT",
+		"es": "FÁBRICA",
+		"it": "FABBRICA"
+	},
+	"MSG000030": {
+		"tr": "Fabrikalar",
+		"en": "Plants",
+		"es": "Suerte",
+		"it": "Fabbriche"
+	},
+	"MSG000031": {
+		"tr": "Fabrika Ekle",
+		"en": "Add Plant",
+		"es": "Agregar fábrica",
+		"it": "Aggiungi fabbrica"
+	},
+	"MSG000032": {
+		"tr": "Fabrika Ekle",
+		"en": "Add Plant",
+		"es": "Agregar fábrica",
+		"it": "Aggiungi fabbrica"
+	},
+	"MSG000033": {
+		"tr": "Müşteri Seçiniz",
+		"en": "Select Customer",
+		"es": "Seleccionar cliente",
+		"it": "Seleziona cliente"
+	},
+	"MSG000034": {
+		"tr": "Fabrika Adı",
+		"en": "Plant Name",
+		"es": "Nombre de la fábrica",
+		"it": "Nome di fabbrica"
+	},
+	"MSG000035": {
+		"tr": "Proje Numarası",
+		"en": "Project Number",
+		"es": "Número de proyecto",
+		"it": "Progetto numero"
+	},
+	"MSG000036": {
+		"tr": "Kapasite",
+		"en": "Capacity",
+		"es": "Capacidad",
+		"it": "Capacità"
+	},
+	"MSG000037": {
+		"tr": "Silmek istediğinize emin misiniz?",
+		"en": "Are you sure you want to delete?",
+		"es": "Estás segura de que quieres eliminar?",
+		"it": "Sei sicuro di voler eliminare?"
+	},
+	"MSG000038": {
+		"tr": "BÖLGE",
+		"en": "ZONE",
+		"es": "ZONA",
+		"it": "ZONA"
+	},
+	"MSG000039": {
+		"tr": "Bölgeler",
+		"en": "Zones",
+		"es": "Zonas",
+		"it": "Zone"
+	},
+	"MSG000040": {
+		"tr": "Bölge",
+		"en": "Zone",
+		"es": "Zona",
+		"it": "Zona"
+	},
+	"MSG000041": {
+		"tr": "Bölge Ekle",
+		"en": "Add Zone",
+		"es": "Añadir zona",
+		"it": "Aggiungi Zona"
+	},
+	"MSG000042": {
+		"tr": "Fabrika",
+		"en": "Plant",
+		"es": "Fábrica",
+		"it": "Fabbrica"
+	},
+	"MSG000043": {
+		"tr": "Seç",
+		"en": "Select",
+		"es": "Seleccione",
+		"it": "Selezionare"
+	},
+	"MSG000044": {
+		"tr": "Makine Ekle",
+		"en": "Add Machine",
+		"es": "Agregar máquina",
+		"it": "Aggiungi macchina"
+	},
+	"MSG000045": {
+		"tr": "Makine",
+		"en": "Machine",
+		"es": "Máquina",
+		"it": "Macchina"
+	},
+	"MSG000046": {
+		"tr": "Makineler",
+		"en": "Machines",
+		"es": "Máquinas",
+		"it": "Macchine"
+	},
+	"MSG000047": {
+		"tr": "Model",
+		"en": "Model",
+		"es": "Modelo",
+		"it": "il modello"
+	},
+	"MSG000048": {
+		"tr": "Kategori",
+		"en": "Category",
+		"es": "Categoría",
+		"it": "Categoria"
+	},
+	"MSG000049": {
+		"tr": "Parça Ekle",
+		"en": "Add Part",
+		"es": "Agregar Parte",
+		"it": "Aggiungi Parte"
+	},
+	"MSG000050": {
+		"tr": "Parça",
+		"en": "Part",
+		"es": "Parte",
+		"it": "Parte"
+	},
+	"MSG000051": {
+		"tr": "Parça Adı",
+		"en": "Part Name",
+		"es": "Nombre de parte",
+		"it": "Nome della parte"
+	},
+	"MSG000052": {
+		"tr": "Parça Numarası",
+		"en": "Part Number",
+		"es": "Numero de parte",
+		"it": "Numero parte"
+	},
+	"MSG000053": {
+		"tr": "Fiyat",
+		"en": "Price",
+		"es": "Precio",
+		"it": "Prezzo"
+	},
+	"MSG000054": {
+		"tr": "MAKİNE",
+		"en": "MACHINE",
+		"es": "MÁQUINA",
+		"it": "MACCHINA"
+	},
+	"MSG000055": {
+		"tr": "PARÇA",
+		"en": "PART",
+		"es": "PARTE",
+		"it": "PARTE"
+	},
+	"MSG000056": {
+		"tr": "Planlı Bakım",
+		"en": "Planned Maintenance",
+		"es": "Mantenimiento planificado",
+		"it": "Manutenzione programmata"
+	},
+	"MSG000057": {
+		"tr": "Yeni BT",
+		"en": "New PM",
+		"es": "Nuevo MP",
+		"it": "Nuovo MP"
+	},
+	"MSG000058": {
+		"tr": "BT Adı",
+		"en": "PM Name",
+		"es": "Nombre de MP",
+		"it": "Nome MP"
+	},
+	"MSG000059": {
+		"tr": "Açıklama",
+		"en": "Description",
+		"es": "Descripción",
+		"it": "Descrizione"
+	},
+	"MSG000060": {
+		"tr": "Adı",
+		"en": "Name",
+		"es": "Nombre",
+		"it": "Nome"
+	},
+	"MSG000061": {
+		"tr": "Parça Fiyatı",
+		"en": "Part Price",
+		"es": "Precio de la pieza",
+		"it": "Prezzo parte"
+	},
+	"MSG000062": {
+		"tr": "Miktar",
+		"en": "Quantity",
+		"es": "Cantidad",
+		"it": "Quantità"
+	},
+	"MSG000063": {
+		"tr": "Talimat Ekle",
+		"en": "Add Instruction",
+		"es": "Agregar Instrucción",
+		"it": "Aggiungi Istruzione"
+	},
+	"MSG000064": {
+		"tr": "Talimat",
+		"en": "Instruction",
+		"es": "Instrucción",
+		"it": "Istruzioni"
+	},
+	"MSG000065": {
+		"tr": "Dosya Ekle",
+		"en": "Add File",
+		"es": "Agregar archivo",
+		"it": "Aggiungi file"
+	},
+	"MSG000066": {
+		"tr": "Dosya Açıklaması",
+		"en": "File Description",
+		"es": "Descripción del archivo",
+		"it": "Descrizione del file"
+	},
+	"MSG000067": {
+		"tr": "Parça Listesi",
+		"en": "Part List",
+		"es": "Lista de",
+		"it": "Elenco delle parti"
+	},
+	"MSG000068": {
+		"tr": "Gösterge Paneli",
+		"en": "Dashboard",
+		"es": "Tablero",
+		"it": "Pannello di controllo"
+	},
+	"MSG000069": {
+		"tr": "Parçalar",
+		"en": "Parts",
+		"es": "Partes",
+		"it": "Parti"
+	},
+	"MSG000070": {
+		"tr": "Alapala Kullanıcıları",
+		"en": "Alapala Users",
+		"es": "Usuarios de Alapala",
+		"it": "Utenti Alapala"
+	},
+	"MSG000071": {
+		"tr": "Müşteri Kullanıcıları",
+		"en": "Customer Users",
+		"es": "Usuarios del cliente",
+		"it": "Utenti clienti"
+	},
+	"MSG000072": {
+		"tr": "Yetki Tanımları",
+		"en": "Authorization Definitions",
+		"es": "Definiciones de autorización",
+		"it": "Definizioni di autorizzazione"
+	},
+	"MSG000073": {
+		"tr": "Bakım Ekibi",
+		"en": "Maintenance Team",
+		"es": "Equipo de mantenimiento",
+		"it": "Team di manutenzione"
+	},
+	"MSG000074": {
+		"tr": "Raporlar",
+		"en": "Reports",
+		"es": "Informes",
+		"it": "Rapporti"
+	},
+	"MSG000075": {
+		"tr": "Anomali ve Alarm Tanımları",
+		"en": "Anomaly and Alarm Definitions",
+		"es": "Definiciones de anomalías y alarmas",
+		"it": "Definizioni di anomalie e allarmi"
+	},
+	"MSG000076": {
+		"tr": "Analiz ve Bildirimler",
+		"en": "Analysis and Notifications",
+		"es": "Análisis y notificaciones",
+		"it": "Analisi e notifiche"
+	},
+	"MSG000077": {
+		"tr": "İş Emirleri",
+		"en": "Work Orders",
+		"es": "Ordens de trabalho",
+		"it": "Ordini di lavoro"
+	},
+	"MSG000078": {
+		"tr": "BT Listesi",
+		"en": "PM List",
+		"es": "Lista De MP",
+		"it": "Elenco Di MP"
+	},
+	"MSG000079": {
+		"tr": "Ekipler",
+		"en": "Teams",
+		"es": "Equipos",
+		"it": "Squadre"
+	},
+	"MSG000080": {
+		"tr": "Bu parça önceden seçilmiştir.",
+		"en": "This part is pre-selected.",
+		"es": "Esta parte está preseleccionada.",
+		"it": "Questa parte è preselezionata."
+	},
+	"MSG000081": {
+		"tr": "Pozisyon Numarası",
+		"en": "Position Number",
+		"es": "Número de posición",
+		"it": "Numero di posizione"
+	},
+	"MSG000082": {
+		"tr": "Talimatlar",
+		"en": "Instructions",
+		"es": "Instrucciones",
+		"it": "Istruzioni"
+	},
+	"MSG000083": {
+		"tr": "Dosyalar",
+		"en": "Files",
+		"es": "Archivos",
+		"it": "File"
+	},
+	"MSG000084": {
+		"tr": "Ad Soyad",
+		"en": "Name Surname",
+		"es": "Nombre Apellido",
+		"it": "Nome Cognome"
+	},
+	"MSG000085": {
+		"tr": "Soyadı",
+		"en": "Last Name",
+		"es": "Apellido",
+		"it": "Cognome"
+	},
+	"MSG000086": {
+		"tr": "Kullanıcı Tipi",
+		"en": "User Type",
+		"es": "Tipo de usuario",
+		"it": "Tipologia di utente"
+	},
+	"MSG000087": {
+		"tr": "Aktif mi?",
+		"en": "Is Active?",
+		"es": "Es activo?",
+		"it": "È attivo?"
+	},
+	"MSG000088": {
+		"tr": "ALAPALA KULLANICILARI",
+		"en": "ALAPALA USERS",
+		"es": "USUARIOS DE ALAPALA",
+		"it": "UTENTI ALAPALA"
+	},
+	"MSG000089": {
+		"tr": "MÜŞTERİ KULLANICILARI",
+		"en": "CUSTOMER USERS",
+		"es": "USUARIOS DEL CLIENTE",
+		"it": "UTENTI CLIENTE"
+	},
+	"MSG000090": {
+		"tr": "Kullanıcılar",
+		"en": "Users",
+		"en": "Users",
+		"es": "Usuarios",
+		"it": "Utenti"
+	},
+	"MSG000091": {
+		"tr": "Kullanıcı Ekle",
+		"en": "Add User",
+		"es": "Agregar usuario",
+		"it": "Aggiungi utente"
+	},
+	"MSG000092": {
+		"tr": "Ekipler",
+		"en": "Teams",
+		"es": "Equipos",
+		"it": "Squadre"
+	},
+	"MSG000093": {
+		"tr": "Ekip Oluştur",
+		"en": "Create Team",
+		"es": "Crear equipo",
+		"it": "Crea squadra"
+	},
+	"MSG000094": {
+		"tr": "Ekip Adı",
+		"en": "Team Name",
+		"es": "Nombre del equipo",
+		"it": "Nome della squadra"
+	},
+	"MSG000095": {
+		"tr": "Ekip Lideri",
+		"en": "Team Leader",
+		"es": "Capitan del equipo",
+		"it": "Guida del gruppo"
+	},
+	"MSG000096": {
+		"tr": "Personeller",
+		"en": "Team Staff",
+		"es": "Personal del equipo",
+		"it": "Staff del team"
+	},
+	"MSG000097": {
+		"tr": "Bölge Seçiniz",
+		"en": "Select Zone",
+		"es": "Seleccionar zona",
+		"it": "Seleziona Zona"
+	},
+	"MSG000098": {
+		"tr": "Ekip Lideri Seçiniz",
+		"en": "Select Team Leader",
+		"es": "Seleccionar líder de equipo",
+		"it": "Seleziona Team Leader"
+	},
+	"MSG000099": {
+		"tr": "Üye Ekle",
+		"en": "Add Members",
+		"es": "Añadir miembros",
+		"it": "Aggiungi membri"
+	},
+	"MSG000100": {
+		"tr": "Üye",
+		"en": "Member",
+		"es": "Miembro",
+		"it": "Membro"
+	},
+	"MSG000101": {
+		"tr": "Ad Soyad",
+		"en": "Name Surname",
+		"es": "Nombre Apellido",
+		"it": "Nome cognome"
+	},
+	"MSG000102": {
+		"tr": "FABRİKALAR",
+		"en": "PLANTS",
+		"es": "SUERTE",
+		"it": "FABBRICHE"
+	},
+	"MSG000103": {
+		"tr": "PARÇALAR",
+		"en": "PARTS",
+		"es": "PARTES",
+		"it": "PARTI"
+	},
+	"MSG000104": {
+		"tr": "Geçersiz E-posta",
+		"en": "Invalid Email",
+		"es": "Email inválido",
+		"it": "E-mail non valido"
+	},
+	"MSG000105": {
+		"tr": "Bu personel daha önceden eklenmiştir.",
+		"en": "This personnel has been previously added.",
+		"es": "Este personal ha sido agregado previamente.",
+		"it": "Questo personale è stato aggiunto in precedenza."
+	},
+	"MSG000106": {
+		"tr": "Başlat",
+		"en": "Start",
+		"es": "Comienzo",
+		"it": "Inizio"
+	},
+	"MSG000107": {
+		"tr": "Devam Ediyor",
+		"en": "Continues",
+		"es": "Continúa",
+		"it": "Continua"
+	},
+	"MSG000108": {
+		"tr": "Duraklatıldı",
+		"en": "Paused",
+		"es": "Pausado",
+		"it": "In pausa"
+	},
+	"MSG000109": {
+		"tr": "Tamamlandı",
+		"en": "Completed",
+		"es": "Terminado",
+		"it": "Completato"
+	},
+	"MSG000110": {
+		"tr": "Açık İş Emri",
+		"en": "Open Work Order",
+		"es": "Orden de trabajo abierta",
+		"it": "Ordine di lavoro aperto"
+	},
+	"MSG000111": {
+		"tr": "Tamamlanan İş Emri",
+		"en": "Completed Work Order",
+		"es": "Orden de trabajo completada",
+		"it": "Ordine di lavoro completato"
+	},
+	"MSG000112": {
+		"tr": "Planlı",
+		"en": "Planned",
+		"es": "Planificado",
+		"it": "Pianificato"
+	},
+	"MSG000113": {
+		"tr": "Haftalık",
+		"en": "Weekly",
+		"es": "Semanal",
+		"it": "Settimanale"
+	},
+	"MSG000114": {
+		"tr": "Aylık",
+		"en": "Monthly",
+		"es": "Mensual",
+		"it": "Mensile"
+	},
+	"MSG000115": {
+		"tr": "Yıllık",
+		"en": "Yearly",
+		"es": "Anual",
+		"it": "Annuale"
+	},
+	"MSG000116": {
+		"tr": "Tümü",
+		"en": "All",
+		"es": "Todos",
+		"it": "Tutti"
+	},
+	"MSG000117": {
+		"tr": "Başlangıç Tarihi",
+		"en": "Start Date",
+		"es": "Fecha de inicio",
+		"it": "Data d'inizio"
+	},
+	"MSG000118": {
+		"tr": "Durum",
+		"en": "Status",
+		"es": "Estado",
+		"it": "Stato"
+	},
+	"MSG000119": {
+		"tr": "Takvim",
+		"en": "Calender",
+		"es": "Calendario",
+		"it": "Calendario"
+	},
+	"MSG000120": {
+		"tr": "İşemri Listesi",
+		"en": "Work Order List",
+		"es": "Lista de órdenes de trabajo",
+		"it": "Elenco ordini di lavoro"
+	},
+	"MSG000121": {
+		"tr": "İş Planı",
+		"en": "Schedule",
+		"es": "Programar",
+		"it": "Programma"
+	},
+	"MSG000122": {
+		"tr": "İş Planı Seçiniz..",
+		"en": "Select Schedule..",
+		"es": "Seleccionar horario..",
+		"it": "Seleziona Programma.."
+	},
+	"MSG000123": {
+		"tr": "Zaman",
+		"en": "Time",
+		"es": "Hora",
+		"it": "Tempo"
+	},
+	"MSG000124": {
+		"tr": "Öncelik Seçiniz..",
+		"en": "Select Priority..",
+		"es": "Seleccionar Prioridad..",
+		"it": "Seleziona Priorità.."
+	},
+	"MSG000125": {
+		"tr": "Bakım Ekibi Seçiniz..",
+		"en": "Select Maintenance Team..",
+		"es": "Seleccionar equipo de mantenimiento..",
+		"it": "Seleziona Team di manutenzione.."
+	},
+	"MSG000126": {
+		"tr": "YETKİ TANIMLARI",
+		"en": "AUTHORIZATION DEFINITIONS",
+		"es": "DEFINICIONES DE AUTORIZACIÓN",
+		"it": "DEFINIZIONI DI AUTORIZZAZIONE"
+	},
+	"MSG000127": {
+		"tr": "Yetki",
+		"en": "Authority",
+		"es": "Autoridad",
+		"it": "Autorità"
+	},
+	"MSG000128": {
+		"tr": "Yetki Adı",
+		"en": "Authority Name",
+		"es": "Nombre de autoridad",
+		"it": "Nome autorità"
+	},
+	"MSG000129": {
+		"tr": "Yetki Kodu",
+		"en": "Authority Code",
+		"es": "Código de autoridad",
+		"it": "Codice dell'autorità"
+	},
+	"MSG000130": {
+		"tr": "Yetki Grupları",
+		"en": "Authority Groups",
+		"es": "Grupos de autoridad",
+		"it": "Gruppi di autorità"
+	},
+	"MSG000131": {
+		"tr": "Grup Adı",
+		"en": "Group Name",
+		"es": "Nombre del grupo",
+		"it": "Nome del gruppo"
+	},
+	"MSG000132": {
+		"tr": "Grup Kodu",
+		"en": "Group Code",
+		"es": "El codigo del grupo",
+		"it": "Codice del gruppo"
+	},
+	"MSG000133": {
+		"tr": "Yetki Tanımlama",
+		"en": "Defining Authority",
+		"es": "Autoridad definitoria",
+		"it": "Definizione dell'autorità"
+	},
+	"MSG000134": {
+		"tr": "Yetki Grubu Tanımlama",
+		"en": "Defining Authorization Group",
+		"es": "Definición de grupo de autorización",
+		"it": "Definizione del gruppo di autorizzazione"
+	},
+	"MSG000135": {
+		"tr": "Bakım Türü",
+		"en": "Maintenance Type",
+		"es": "Tipo de mantenimiento",
+		"it": "Tipo di manutenzione"
+	},
+	"MSG000136": {
+		"tr": "İşçilik Süresi",
+		"en": "Labor Time",
+		"es": "Tiempo de trabajo",
+		"it": "Tempo di lavoro"
+	},
+	"MSG000137": {
+		"tr": "Zaman Birimi",
+		"en": "Time Unit",
+		"es": "Unidad de tiempo",
+		"it": "Unità di tempo"
+	},
+	"MSG000138": {
+		"tr": "Haftalık",
+		"en": "Weekly",
+		"es": "Semanal",
+		"it": "Settimanale"
+	},
+	"MSG000139": {
+		"tr": "Aylık",
+		"en": "Monthly",
+		"es": "Mensual",
+		"it": "Mensile"
+	},
+	"MSG000140": {
+		"tr": "Üç Aylık",
+		"en": "Three-Monthly",
+		"es": "Tres Meses",
+		"it": "Tre Mesi"
+	},
+	"MSG000141": {
+		"tr": "Üç Aylık",
+		"en": "Six-Monthly",
+		"es": "Seis meses de edad",
+		"it": "Sei Mesi"
+	},
+	"MSG000142": {
+		"tr": "Planlı",
+		"en": "Planned ",
+		"es": "Planificado ",
+		"it": "Previsto "
+	},
+	"MSG000143": {
+		"tr": "Tamamlanan",
+		"en": "Completed",
+		"es": "Terminado",
+		"it": "Completato"
+	},
+	"MSG000144": {
+		"tr": "Yıllık",
+		"en": "Yearly",
+		"es": "Anual",
+		"it": "Annuale"
+	},
+	"MSG000145": {
+		"tr": "Öngörülen",
+		"en": "Planned",
+		"es": "Previsto",
+		"it": "Previsto"
+	},
+	"MSG000146": {
+		"tr": "Harcanan",
+		"en": "Actual",
+		"es": "Gastado ",
+		"it": "Speso"
+	},
+	"MSG000147": {
+		"tr": "Oluşturuldu",
+		"en": "Created",
+		"es": "Creado",
+		"it": "Creado"
+	},
+	"MSG000148": {
+		"tr": "Başlandı",
+		"en": "Started",
+		"es": "Empezado",
+		"it": "Iniziato"
+	},
+	"MSG000149": {
+		"tr": "dk",
+		"en": "min",
+		"es": "min",
+		"it": "min"
+	},
+	"MSG000150": {
+		"tr": "TOPLAM İŞ EMİRLERİ",
+		"en": "TOTAL WORK ORDERS",
+		"es": "ÓRDENES TOTALES DE TRABAJO",
+		"it": "ORDINI DI LAVORO TOTALI"
+	},
+	"MSG000151": {
+		"tr": "Toplam İş Emirleri",
+		"en": "Total Work Orders",
+		"es": "Órdenes Totales De Trabajo",
+		"it": "Ordina Di Lavoro Totali"
+	},
+	"MSG000152": {
+		"tr": "Plansız",
+		"en": "Unplanned",
+		"es": "No planificado",
+		"it": "Non pianificato"
+	},
+	"MSG000153": {
+		"tr": "PLANLI",
+		"en": "PLANNED",
+		"es": "PLANIFICADO",
+		"it": "PIANIFICATO"
+	},
+	"MSG000154": {
+		"tr": "PLANSIZ",
+		"en": "UNPLANNED",
+		"es": "NO PLANIFICADO",
+		"it": "NON PIANIFICATO"
+	},
+	"MSG000155": {
+		"tr": "OLUŞTURULDU",
+		"en": "CREATED",
+		"es": "CREADO",
+		"it": "CREADO"
+	},
+	"MSG000156": {
+		"tr": "TAMAMLANAN",
+		"en": "COMPLETED",
+		"es": "TERMINADO",
+		"it": "COMPLETATO"
+	},
+	"MSG000157": {
+		"tr": "Plansız Bakım",
+		"en": "Unplanned Maintenance",
+		"es": "Mantenimiento no planificado",
+		"it": "Manutenzione non pianificata"
+	},
+	"MSG000158": {
+		"tr": "Makine",
+		"en": "Machine",
+		"es": "Máquina",
+		"it": "Macchina"
+	},
+	"MSG000159": {
+		"tr": "Oluşturan Kişi",
+		"en": "Created by",
+		"es": "Creado por",
+		"it": "Creato da"
+	},
+	"MSG000160": {
+		"tr": "Oluşturma Tarihi",
+		"en": "Creation Date",
+		"es": "Fecha de creación",
+		"it": "Data di creazione"
+	},
+	"MSG000161": {
+		"tr": "Planlı Bakım İş Emri Takip Formu",
+		"en": "Planned Maintenance Work Order Tracking Form",
+		"es": "Formulario de seguimiento de órdenes de trabajo de mantenimiento planificado",
+		"it": "Modulo di monitoraggio dell'ordine di lavoro di manutenzione pianificata"
+	},
+	"MSG000162": {
+		"tr": "Başlama Tarihi",
+		"en": "Starting Date",
+		"es": "Fecha de inicio",
+		"it": "Data di inizio"
+	},
+	"MSG000163": {
+		"tr": "Bitiş Tarihi",
+		"en": "Finish Date",
+		"es": "Fecha de finalización",
+		"it": "Data di fine"
+	},
+	"MSG000164": {
+		"tr": "Kullanılan Parçalar",
+		"en": "Used Parts",
+		"es": "Partes usadas",
+		"it": "Parti usate"
+	},
+	"MSG000165": {
+		"tr": "BAKIM/ONARIM İŞİ TALEP EDEN",
+		"en": "REQUESTING MAINTENANCE/REPAIR JOB",
+		"es": "SOLICITUD DE TRABAJOS DE MANTENIMIENTO / REPARACIÓN",
+		"it": "RICHIEDERE LAVORI DI MANUTENZIONE/RIPARAZIONE"
+	},
+	"MSG000166": {
+		"tr": "Tarih",
+		"en": "Date",
+		"es": "Fecha",
+		"it": "Data"
+	},
+	"MSG000167": {
+		"tr": "Saat",
+		"en": "Hour",
+		"es": "Hora",
+		"it": "Ora"
+	},
+	"MSG000168": {
+		"tr": "Yapılacak İşler",
+		"en": "Things to do",
+		"es": "Cosas para hacer",
+		"it": "Cose da fare"
+	},
+	"MSG000169": {
+		"tr": "BAKIM/ONARIM YAPAN",
+		"en": "MAINTENANCE/REPAIR",
+		"es": "REPARACIÓN DE MANTENIMIENTO",
+		"it": "MANUTENZIONE/RIPARAZIONE"
+	},
+	"MSG000170": {
+		"tr": "BİLDİRİM",
+		"en": "NOTIFICATION",
+		"es": "NOTIFICACIÓN",
+		"it": "NOTIFICA"
+	},
+	"MSG000171": {
+		"tr": "Yapılan İşler",
+		"en": "The Work Done",
+		"es": "El trabajo hecho",
+		"it": "Il lavoro fatto"
+	},
+	"MSG000172": {
+		"tr": "Hata Modu",
+		"en": "Error Mode",
+		"es": "Modo de error",
+		"it": "Modalità errore Error"
+	},
+	"MSG000173": {
+		"tr": "Hata Kaynağı",
+		"en": "Error Source",
+		"es": "Origen del error",
+		"it": "Sorgente errore Error"
+	},
+	"MSG000174": {
+		"tr": "Hata Modu Tanımlama",
+		"en": "Defining Error Mode",
+		"es": "Definición del modo de error",
+		"it": "Definizione della modalità di errore"
+	},
+	"MSG000175": {
+		"tr": "Konum Seçiniz",
+		"en": "Select Location",
+		"es": "Seleccionar ubicación",
+		"it": "Seleziona la posizione"
+	},
+	"MSG000176": {
+		"tr": "Plansız Bakımın Tanımlanması",
+		"en": "Defining Unplanned Maintenance",
+		"es": "Definición de mantenimiento no planificado",
+		"it": "Definizione di manutenzione non pianificata"
+	},
+	"MSG000177": {
+		"tr": "BAKIM / ONARIM / İŞ BİLDİRİM FORMU",
+		"en": "MAINTENANCE / REPAIR / WORK NOTIFICATION FORM",
+		"es": "MANTENIMIENTO / REPARAR / FORMULARIO DE NOTIFICACION DE TRABAJO",
+		"it": "MANUTENZIONE / RIPARAZIONE / MODULO DI NOTIFICA DEL LAVORO"
+	},
+	"MSG000178": {
+		"tr": "KAYIT NO",
+		"en": "REGISTRATION NUM",
+		"es": "NÚMERO DE REGISTRO",
+		"it": "NUMERO DI REGISTRAZIONE"
+	},
+	"MSG000179": {
+		"tr": "BAKIM / ONARIM / İŞİ TALEP EDEN",
+		"en": "MAINTENANCE / REPAIR / DEMANDING THE WORK",
+		"es": "MANTENIMIENTO / REPARAR / EXIGIENDO EL TRABAJO",
+		"it": "MANUTENZIONE / RIPARAZIONE / CHIEDENDO IL LAVORO"
+	},
+	"MSG000180": {
+		"tr": "PERSONEL",
+		"en": "STAFF",
+		"es": "PERSONAL",
+		"it": "PERSONALE"
+	},
+	"MSG000181": {
+		"tr": "ADI SOYADI",
+		"en": "NAME SURNAME",
+		"es": "NOMBRE APELLIDO",
+		"it": "NOME COGNOME"
+	},
+	"MSG000182": {
+		"tr": "BİLDİRİM",
+		"en": "NOTIFICATION",
+		"es": "NOTIFICACIÓN",
+		"it": "NOTIFICA"
+	},
+	"MSG000183": {
+		"tr": "BAŞLAMA ZAMANI",
+		"en": "TIME TO START",
+		"es": "TIEMPO DE EMPEZAR",
+		"it": "È ORA DI INIZIARE"
+	},
+	"MSG000184": {
+		"tr": "BİTİŞ ZAMANI",
+		"en": "TIME TO END",
+		"es": "TIEMPO PARA TERMINAR",
+		"it": "TEMPO DI FINE"
+	},
+	"MSG000185": {
+		"tr": "MAKİNE BEKLEME SÜRESİ",
+		"en": "MACHINE WAITING TIME",
+		"es": "TIEMPO DE ESPERA DE LA MAQUINA",
+		"it": "TEMPO DI ATTESA DELLA MACCHİNA"
+	},
+	"MSG000186": {
+		"tr": "YAPILAN İŞLER",
+		"en": "THE WORK DONE",
+		"es": "EL TRABAJO HECHO",
+		"it": "IL LAVORO SVOLTO"
+	},
+	"MSG000187": {
+		"tr": "TALEP EDİLEN BAKIM ONARIM / İŞİN TANIMI",
+		"en": "REQUESTED MAINTENANCE AND REPAIR / DESCRIPTION OF WORK",
+		"es": "MANTENIMIENTO Y REPARACION SOLICITADOS / DESCRIPCIÓN DEL TRABAJO",
+		"it": "MANUTENZIONE E RIPARAZIONE RICHIESTI / DESCRIZIONE DEL LAVORO"
+	},
+	"MSG000188": {
+		"tr": "BAKIM / ONARIMI YAPAN",
+		"en": "MAINTENANCE / REPAIR PERSON",
+		"es": "MANTENIMIENTO / PERSONA DE REPARACION",
+		"it": "MANUTENZIONE / RIPARAZIONE PERSONA"
+	},
+	"MSG000189": {
+		"tr": "KULLANILAN MALZEMENİN ADI",
+		"en": "NAME OF THE MATERIAL USED",
+		"es": "NOMBRE DEL MATERIAL UTILIZADO",
+		"it": "NOME DEL MATERIALE UTILIZZATO"
+	},
+	"MSG000190": {
+		"tr": "MİKTARI",
+		"en": "QUANTITY",
+		"es": "CANTIDAD",
+		"it": "QUANTITÀ"
+	},
+	"MSG000191": {
+		"tr": "BİRİMİ",
+		"en": "UNIT OF",
+		"es": "UNIDAD DE",
+		"it": "UNITÀ DI"
+	},
+	"MSG000192": {
+		"tr": "Miktar Birimi",
+		"en": "Unit of Quantity",
+		"es": "Unidad de cantidad",
+		"it": "Unità di quantità"
+	},
+	"MSG000193": {
+		"tr": "Öngörülen Süre",
+		"en": "Projected Time",
+		"es": "Tiempo proyectado",
+		"it": "Tempo previsto"
+	},
+	"MSG000194": {
+		"tr": "Harcanan Süre",
+		"en": "Time Spent",
+		"es": "Tiempo usado",
+		"it": "Tempo impiegato"
+	},
+
+	"MSG000195": {
+		"tr": "Para Birimi",
+		"en": "Currency",
+		"es": "Divisa",
+		"it": "Valuta"
+	}
+}

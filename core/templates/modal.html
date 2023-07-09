@@ -1,0 +1,173 @@
+<!-- İHA Modal -->
+<div class="modal fade" id="ihaModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">İHA</h4>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="formIha">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="ihaMarka">Marka</label>
+                            <div class="col-sm-10">
+                                <input class="form-control custom-fs" id="ihaMarka" name="marka" placeholder="Marka"
+                                       type="text" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="ihaModel">Model</label>
+                            <div class="col-sm-10">
+                                <input class="form-control custom-fs" id="ihaModel" name="model"
+                                       placeholder="Model"
+                                       type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="ihaAgirlik">Ağırlık</label>
+                            <div class="col-sm-10">
+                                <input class="form-control custom-fs" id="ihaAgirlik" name="agirlik"
+                                       placeholder="Ağırlık"
+                                       type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="ihaKategori">Kategori</label>
+                            <div class="col-sm-10">
+                                <input class="form-control custom-fs" id="ihaKategori" name="kategori"
+                                       placeholder="Kategori"
+                                       type="text">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- /.card-body -->
+                    <input name="action" type="hidden" value="">
+                    <input name="id" type="hidden" value="">
+                </form>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button class="btn btn-default" data-dismiss="modal" type="button">Kapat</button>
+                <button class="btn btn-primary" onClick="func_ihaModal_save(this)" type="button">Kaydet</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.İHA modal -->
+
+
+
+<!-- İHA Kiralama Modal -->
+<div class="modal fade" id="ihaRentModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">İHA Kirala</h4>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="formIhaRent">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="uye">Üye</label>
+                            <div class="col-sm-10">
+                                 <select class="custom-select custom-fs" id="uye" name="uye">
+
+                                    {% for key in users %}
+                                        <option value={{ key.id }}>{{ key.email }}</option>
+                                    {% endfor %}
+
+                                </select>
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="ihaDate">Veriliş Tarihi</label>
+                            <div class="col-sm-10">
+                                <div class="input-group date" data-target-input="nearest" id="ihaDate">
+                                    <input class="form-control datetimepicker-input custom-fs custom-pf"
+                                           data-target="#ihaDate"
+                                           type="text" name="vtarihi"/>
+                                    <div class="input-group-append" data-target="#ihaDate"
+                                         data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="ihaDate">Veriliş Saati</label>
+                            <div class="col-sm-10">
+                                <div class="input-group date" data-target-input="nearest" id="ihaTime">
+                                    <input class="form-control datetimepicker-input custom-fs custom-pf"
+                                           data-target="#ihaTime"
+                                           type="text" name="vsaati"/>
+                                    <div class="input-group-append" data-target="#ihaTime"
+                                         data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="alisDiv">
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="ihaDateA">Alış Tarihi</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group date" data-target-input="nearest" id="ihaDateA">
+                                        <input class="form-control datetimepicker-input custom-fs custom-pf"
+                                               data-target="#ihaDateA"
+                                               type="text" name="atarihi"/>
+                                        <div class="input-group-append" data-target="#ihaDateA"
+                                             data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="ihaTimeA">Alış Saati</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group date" data-target-input="nearest" id="ihaTimeA">
+                                        <input class="form-control datetimepicker-input custom-fs custom-pf"
+                                               data-target="#ihaTimeA"
+                                               type="text" name="asaati"/>
+                                        <div class="input-group-append" data-target="#ihaTimeA"
+                                             data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input name="action" type="hidden" value="">
+                    <input name="iha" type="hidden" value="">
+                    <input name="id" type="hidden" value="">
+                </form>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button class="btn btn-default" data-dismiss="modal" type="button">Kapat</button>
+                <button class="btn btn-primary" onClick="func_ihaRentModal_save(this)" type="button">Kaydet</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.İHA modal -->
+

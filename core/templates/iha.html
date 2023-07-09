@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  <div class="row">
+        <button class="btn btn-success btn-sm btn-block"
+                id="btn_newRcp" onClick="func_newIha()"
+                type="button">Yeni İHA
+        </button>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped"
+               id="tableIha"
+               data-toggle="table"
+               data-ajax="ajaxRequest"
+               data-search="true"
+               data-side-pagination="server"
+               data-pagination="true"
+               data-page-size="3"
+               data-loading-template="loadingTemplate"
+               data-pagination-parts=['pageList']
+               data-auto-refresh="true"
+               data-show-refresh="true"
+      >
+
+        <thead>
+          <tr>
+            <th data-field="marka" style="width: 25%; text-align: center">Marka</th>
+            <th data-field="model" style="width: 25%; text-align: center">Model</th>
+            <th data-field="agirlik" style="width: 20%; text-align: center">Ağırlık</th>
+            <th data-field="kategori" style="width: 25%; text-align: center">Kategori</th>
+            <th data-field="actions" data-formatter="func_actions" style="width: 5%; text-align: center">İşlemler</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+
+
+{% endblock %}
+
+
+{% block jsList %}
+{{ block.super }}
+<link href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css" rel="stylesheet">
+
+<script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js"></script>
+<script>
+    function loadingTemplate(message) {
+      return '<i class="fa fa-spinner fa-spin fa-fw fa-2x"></i>LOADING...'
+    }
+
+    $('#ihaDate').datetimepicker({
+      format: 'DD-MM-YYYY',
+      defaultDate: moment()
+    });
+
+    $('#ihaTime').datetimepicker({
+      format: 'HH:mm',
+      defaultDate: moment()
+    });
+
+    $('#ihaDateA').datetimepicker({
+      format: 'DD-MM-YYYY',
+      defaultDate: moment()
+    });
+
+    $('#ihaTimeA').datetimepicker({
+      format: 'HH:mm',
+      defaultDate: moment()
+    })
+    var table = $('#tableIha')
+
+    function ajaxRequest(params) {
+      console.log("params:", params)
+      var url = '/api/iha/'
+      $.get(url + '?' + $.param(params.data)).then(function(res) {
+        params.success(res)
+      })
+    }
+
+    function func_actions(value, row) {
+      var html = '';
+      for (var i = 0; i < value.length; i++) {
+        if (value[i] == xedit) {
+          html += '<button type="button" onClick="func_editIha(this)" class="btn btn-info btn-sm m-2" id="btn_editIha" tablo_id="' + row.id + '" title="Düzenle"><i class="far fa-edit"></i></button>'
+        }
+        if (value[i] == xdelete) {
+          html += '<button type="button" onClick="func_delIha(this)" class="btn btn-danger btn-sm m-2" id="btn_delIha" tablo_id="' + row.id + '" title="Sil"><i class="fas fa-times red" style="color:#FFFFFF;"></i></button>'
+        }
+        if (value[i] == xrent) {
+          html += '<button type="button" onClick="func_rentIha(this)" class="btn btn-success btn-sm m-2" id="btn_rentIha" tablo_id="' + row.id + '" title="Kirala"><i class="fas fa-stream"</i></button>'
+        }
+      }
+      return html;
+    }
+
+    function func_newIha() {
+      document.forms["formIha"]["action"].value = "INSERT";
+      document.forms["formIha"]["id"].value = "0";
+
+      $("#ihaModal").modal('show');
+    }
+
+    function func_editIha(item){
+      var button = $(item);
+      var tablo_id = button.attr("tablo_id");
+
+      $.ajax({
+          type: "GET",
+          url: '/api/iha/'+ tablo_id,
+          success: function (data) {
+
+            document.forms["formIha"]["action"].value = "UPDATE";
+            document.forms["formIha"]["marka"].value = data.marka;
+            document.forms["formIha"]["model"].value = data.model;
+            document.forms["formIha"]["agirlik"].value = data.agirlik;
+            document.forms["formIha"]["kategori"].value = data.kategori;
+            document.forms["formIha"]["id"].value = data.id;
+            },
+            error: function (error) {
+                console.log(error);
+                Toast.fire({icon: 'error', title: "ERROR :".concat(error)})
+            }
+        })
+        $("#ihaModal").modal('show');
+    }
+
+    function func_ihaModal_save(item){
+
+      var action = document.forms["formIha"]["action"].value;
+      var id = document.forms["formIha"]["id"].value
+      var formData = $('#formIha').serialize();
+
+      if (action == "INSERT") {
+        var type = "POST";
+        var path = "";
+      } else {
+        var type = "PUT"
+        var path = id + "/";
+      }
+
+      $.ajax({
+        type: type,
+        url: '/api/iha/' + path,
+        data: formData,
+        headers: {
+          "Authorization": "Token {{ request.session.token }} ",
+        },
+        success: function(msg) {
+
+          table.bootstrapTable('refresh');
+          $("#ihaModal").modal('hide');
+          Toast.fire({
+            icon: 'success',
+            title: 'Kaydedildi.'
+          })
+        },
+        error: function(error) {
+          Toast.fire({
+            icon: 'error',
+            title: "ERROR :".concat(error)
+          })
+        }
+      });
+    }
+
+    function func_delIha(item) {
+      var r = confirm("Silinsin mi?");
+      if (r == true) {
+        $.ajax({
+          type: "DELETE",
+          url: '/api/iha/' + $(item).attr("tablo_id"),
+          headers: {
+            "Authorization": "Token {{ request.session.token }} ",
+          },
+          success: function(msg) {
+            table.bootstrapTable('refresh');
+            Toast.fire({
+              icon: 'success',
+              title: 'Silindi.'
+            })
+          },
+          error: function(error) {
+            Toast.fire({
+              icon: 'error',
+              title: "ERROR :".concat(error)
+            })
+          }
+        });
+      }
+    }
+
+    function func_rentIha(item){
+      var button = $(item);
+      var tablo_id = button.attr("tablo_id");
+      $("#ihaRentModal").modal('show');
+      document.forms["formIhaRent"]["iha"].value = tablo_id;
+      document.forms["formIhaRent"]["atarihi"].value = "";
+      document.forms["formIhaRent"]["asaati"].value = "";
+
+      var alis_div = document.getElementById("alisDiv");
+      alis_div.style.visibility = "hidden";
+    }
+
+    function func_ihaRentModal_save(item){
+      var formData = $('#formIhaRent').serialize();
+
+      $.ajax({
+        type: "POST",
+        url: '/api/kiralama/',
+        data: formData,
+        headers: {
+          "Authorization": "Token {{ request.session.token }} ",
+        },
+        success: function(msg) {
+
+          table.bootstrapTable('refresh');
+          $("#ihaRentModal").modal('hide');
+          Toast.fire({
+            icon: 'success',
+            title: 'Kiralama tanımlandı.'
+          })
+        },
+        error: function(error) {
+          Toast.fire({
+            icon: 'error',
+            title: "ERROR :".concat(error)
+          })
+        }
+      });
+
+    }
+
+
+</script>
+
+{% endblock %}
