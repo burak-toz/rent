@@ -7,7 +7,7 @@
 
         <img alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
              src="{% static 'dist/img/AdminLTELogo.png' %}" style="opacity: .8">
-        <span class="brand-text " style="font-family: Orbitron-Bold">ALAPALA UN</span>
+        <span class="brand-text " style="font-family: Orbitron-Bold">BAYKAR</span>
     </a>
 
     <!-- Sidebar -->
@@ -24,7 +24,7 @@
         </div>
         <div class="info">
 
-            <a href="{% url 'profil' %}" >{{ request.user.first_name }} {{ request.user.last_name }}</a>
+            <a href="{% url 'profil' %}" >{{ request.user.profil.name }} {{ request.user.profil.surname }}</a>
 
 {#            <span class="d-block" style="color: floralwhite">{{ request.user.first_name }} {{ request.user.last_name }}</span>#}
         </div>
@@ -52,21 +52,20 @@
                         <p>Home Page</p>
                     </a>
                 </li>
-<!--                &lt;!&ndash; /.Silo &ndash;&gt;-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="/silo">-->
-<!--                        <i class="nav-icon fas fa-database"></i>-->
-<!--                        <p>Silo</p>-->
-<!--                    </a>-->
-<!--                </li>-->
-
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="/abc">-->
-<!--                        <i class="nav-icon fas fa-align-right"></i>-->
-<!--                        <p>Test</p>-->
-<!--                    </a>-->
-<!--                    <a class="btn btn-success btn-sm btn-block" href="/abc?page=2"></a>-->
-<!--                </li>-->
+                <!-- /.IHA -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'iha' %}">
+                        <i class="nav-icon fab fa-mixer"></i>
+                        <p>İHA</p>
+                    </a>
+                </li>
+                <!-- /.Kiralama -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'kiralama' %}">
+                        <i class="nav-icon fas fa-grip-horizontal"></i>
+                        <p>Kiralama</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -1,35 +1,49 @@
 {% extends "base.html" %}
+{% load static %}
+{% block cssList %}
+{{ block.super }}
 
+
+
+<link href="{% static 'indexcss/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'indexcss/datatable.css' %}" rel="stylesheet">
+<link href="{% static 'indexcss/fixedcolumn.css' %}" rel="stylesheet">
+
+
+{% endblock %}
 
 {% block content %}
 
   <div class="row">
     <div class="col-12">
       <table class="table table-striped"
-               id="tableKiralama"
-               data-toggle="table"
-               data-ajax="ajaxRequest"
-               data-search="true"
-               data-side-pagination="server"
-               data-pagination="true"
-               data-page-size="3"
-               data-loading-template="loadingTemplate"
-               data-pagination-parts=['pageList']
-               data-auto-refresh="true"
-               data-show-refresh="true"
-      >
+               id="tableKiralama">
 
         <thead>
           <tr>
-            <th data-field="iha_string">IHA</th>
-            <th data-field="uye_string">ÜYE</th>
-            <th data-field="vtarihi" >Veriliş Tarihi</th>
-            <th data-field="vsaati" >Veriliş Saati</th>
-            <th data-field="atarihi" >Alış Tarihi</th>
-            <th data-field="asaati" >Alış Saati</th>
-            <th data-field="actions" data-formatter="func_actions">İşlemler</th>
+            <th>IHA</th>
+            <th>ÜYE</th>
+            <th>Veriliş Tarihi</th>
+            <th>Veriliş Saati</th>
+            <th>Alış Tarihi</th>
+            <th>Alış Saati</th>
+            <th>İşlemler</th>
           </tr>
         </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+         <tr>
+            <th><p>IHA</p></th>
+            <th><p>ÜYE</p></th>
+            <th>Veriliş Tarihi</th>
+            <th>Veriliş Saati</th>
+            <th>Alış Tarihi</th>
+            <th>Alış Saati</th>
+            <th>İşlemler</th>
+          </tr>
+        </tfoot>
       </table>
     </div>
   </div>
@@ -45,7 +59,51 @@
 
 <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"></script>
 <script>
+
+$(document).ready(function() {
+      $('#tableKiralama tfoot th p').each(function () {
+        var title = $(this).text();
+        $(this).html('<input style="width:100%" type="text" placeholder="' + title + '" />');
+    });
+
+      var table = $('#tableKiralama').DataTable({
+        initComplete: function () {
+            // Apply the search
+            this.api()
+                .columns()
+                .every(function () {
+                    var that = this;
+
+                    $('input', this.footer()).on('keyup change clear', function () {
+                        if (that.search() !== this.value) {
+                            that.search(this.value).draw();
+                            console.log("search:", this.value )
+                        }
+                    });
+                });
+        },
+
+        "ajax": "/api/kiralama/",
+        processing: true,
+        serverSide: true,
+        "columns": [
+
+            {"data": "iha_string"},
+            {"data": "uye_string"},
+            {"data": "vtarihi"},
+            {"data": "vsaati"},
+            {"data": "atarihi"},
+            {"data": "asaati"},
+            {
+                "data": "actions",
+
+                "render" : function(value, type, row){
+                    return func_actions(row, value);
+                    }
+            }],
+      });
     function loadingTemplate(message) {
       return '<i class="fa fa-spinner fa-spin fa-fw fa-2x"></i>LOADING...'
     }
@@ -70,7 +128,9 @@
       defaultDate: moment()
     });
 
-    var table = $('#tableIha')
+});
+
+
 
     function ajaxRequest(params) {
       console.log("params:", params)
@@ -80,7 +140,7 @@
       })
     }
 
-    function func_actions(value, row) {
+    function func_actions(row, value) {
       var html = '';
       for (var i = 0; i < value.length; i++) {
         if (value[i] == xedit) {
@@ -122,34 +182,29 @@
         $("#ihaRentModal").modal('show');
     }
 
-    function func_ihaModal_save(item){
+    function func_ihaRentModal_save(item){
 
-      var action = document.forms["formIha"]["action"].value;
-      var id = document.forms["formIha"]["id"].value
-      var formData = $('#formIha').serialize();
+      var formData = $('#formIhaRent').serialize();
+      var id = document.forms["formIhaRent"]["id"].value;
 
-      if (action == "INSERT") {
-        var type = "POST";
-        var path = "";
-      } else {
-        var type = "PUT"
-        var path = id + "/";
-      }
+      var type = "PUT"
+      var path = id + "/";
 
       $.ajax({
         type: type,
-        url: '/api/iha/' + path,
+        url: '/api/kiralama/' + path,
         data: formData,
         headers: {
           "Authorization": "Token {{ request.session.token }} ",
         },
         success: function(msg) {
 
-          table.bootstrapTable('refresh');
-          $("#ihaModal").modal('hide');
+          $('#tableKiralama').DataTable().ajax.reload();
+          console.log($('#tableKiralama').DataTable())
+          $("#ihaRentModal").modal('hide');
           Toast.fire({
             icon: 'success',
-            title: 'Kaydedildi.'
+            title: 'Kiralama güncellendi.'
           })
         },
         error: function(error) {
@@ -161,17 +216,17 @@
       });
     }
 
-    function func_delIha(item) {
+    function func_delRent(item) {
       var r = confirm("Silinsin mi?");
       if (r == true) {
         $.ajax({
           type: "DELETE",
-          url: '/api/iha/' + $(item).attr("tablo_id"),
+          url: '/api/kiralama/' + $(item).attr("tablo_id"),
           headers: {
             "Authorization": "Token {{ request.session.token }} ",
           },
           success: function(msg) {
-            table.bootstrapTable('refresh');
+             $('#tableKiralama').DataTable().ajax.reload();
             Toast.fire({
               icon: 'success',
               title: 'Silindi.'
@@ -187,50 +242,7 @@
       }
     }
 
-    function func_rentIha(item){
-      $("#ihaRentModal").modal('show');
-    }
 
-    function func_ihaRentModal_save(item){
-      var formData = $('#formIhaRent').serialize();
-//      var xdate = new Date(document.forms["formIhaRent"]["vtarihi"].value);
-      var xdate = $("#ihaDate").data("datetimepicker");
-      var uye = document.forms["formIhaRent"]["uye"].value;
-      var iha = document.forms["formIhaRent"]["iha"].value;
-      console.log(xdate)
-      console.log(typeof xdate)
-/*
-      var data = {}
-      data["vtarihi"] = xdate.toISOString();
-      data["uye"] = uye;
-      data["iha"] = iha;
-
-
-      $.ajax({
-        type: "POST",
-        url: '/api/kiralama/',
-        data: data,
-        headers: {
-          "Authorization": "Token {{ request.session.token }} ",
-        },
-        success: function(msg) {
-
-          table.bootstrapTable('refresh');
-          $("#ihaRentModal").modal('hide');
-          Toast.fire({
-            icon: 'success',
-            title: 'Kiralama tanımlandı.'
-          })
-        },
-        error: function(error) {
-          Toast.fire({
-            icon: 'error',
-            title: "ERROR :".concat(error)
-          })
-        }
-      });
-      */
-    }
 
 
 </script>

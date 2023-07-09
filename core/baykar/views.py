@@ -18,7 +18,9 @@ from baykar.models import Profil
 
 
 def homepage(request):
-    return render(request, 'index.html')
+    if request.user.is_authenticated:
+        return render(request, 'index.html')
+    return HttpResponseRedirect('/login')
 
 def loginpage(request):
     return render(request, 'login.html')
@@ -71,7 +73,10 @@ def registerpage(request):
     return render(request, 'register.html')
 
 def profilpage(request):
-    return render(request, 'profil.html')
+    if request.user.is_authenticated:
+        return render(request, 'profil.html')
+    return HttpResponseRedirect('/login')
+
 
 def ihapage(request):
     if request.user.is_authenticated:
