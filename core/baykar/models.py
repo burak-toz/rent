@@ -4,6 +4,16 @@ from django.contrib.auth.models import User
 from PIL import Image
 import uuid
 import os.path
+from django.conf import settings
+
+# signals imports
+from django.dispatch import receiver
+from django.db.models.signals import (
+    pre_save,
+    post_save,
+)
+
+UserModel = settings.AUTH_USER_MODEL
 
 def rename_image(instance, filename):
     path = "profil_foto"
@@ -42,6 +52,25 @@ class Profil(models.Model):
 
     class Meta:
         verbose_name_plural = "Profiller"
+
+
+@receiver(post_save, sender=UserModel)
+def user_post_save_receiver(sender, instance, created, *args, **kwargs):
+    """
+    after saved in the database
+    """
+    if created:
+        print("Send email to", instance.username)
+        Profil.objects.create(user=instance, name=instance.first_name, surname=instance.last_name)
+        # trigger pre_save
+        # instance.save()
+        # trigger post_save
+    else:
+        print(instance.username, "was just saved")
+
+# post_save.connect(user_created_handler, sender=User)
+
+
 
 
 class Iha(models.Model):
