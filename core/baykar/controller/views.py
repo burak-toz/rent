@@ -74,8 +74,11 @@ def register(request):
 
         if status_code == SUCCESS_CODE:
             user = authenticate(request, username=email, password=password1)
-            profil = Profil(user=user, name=name, surname=surname)
-            profil.save()
+            # user.profil
+            user.profil.name = name
+            user.profil.surname = surname
+            # profil = Profil(user=user, name=name, surname=surname)
+            user.profil.save()
 
             request.session['token'] = response.json()['key']
             request.session.modified = True
@@ -84,8 +87,11 @@ def register(request):
 
         if status_code == NO_CONTENT_CODE:
             user = authenticate(request, username=email, password=password1)
-            profil = Profil(user=user, name=name, surname=surname)
-            profil.save()
+            # profil = user.profil
+            user.profil.name = name
+            user.profil.surname = surname
+            # profil = Profil(user=user, name=name, surname=surname)
+            user.profil.save()
 
 
             return redirect('login')

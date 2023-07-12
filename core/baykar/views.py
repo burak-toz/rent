@@ -51,7 +51,9 @@ def registerpage(request):
 
         if status_code == SUCCESS_CODE:
             user = authenticate(request, username=email, password=password1)
-            profil = Profil(user=user, name=name, surname=surname)
+            profil = user.profil
+            profil.name = name
+            profil.surname = surname
             profil.save()
 
             request.session['token'] = response.json()['key']
@@ -61,7 +63,9 @@ def registerpage(request):
 
         if status_code == NO_CONTENT_CODE:
             user = authenticate(request, username=email, password=password1)
-            profil = Profil(user=user, name=name, surname=surname)
+            profil = user.profil
+            profil.name = name
+            profil.surname = surname
             profil.save()
 
 
